@@ -14,9 +14,12 @@
     // Your code here...
     setTimeout(function() {
         $("header.AppHeader").remove();
-        $(".ContentItem-actions").parent().remove();
-        $(".Question-sideColumn").remove();
+        console.log('header removed...')
+        $(".ContentItem-actions").css("display", "none");
+        console.log('comment removed...')
+        $(".Question-sideColumn")[0].remove();
+        console.log('side removed...')
         $(".Question-mainColumn").css("width", "100%");
-    }, 1000)
+    }, 3000)
 
 })();
